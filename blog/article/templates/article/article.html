@@ -9,6 +9,7 @@
   <body>
     {% include 'main/menu.html' %}
     <h2>歡迎來到我的部落格</h2>
+    <p><a class="btn" href="{% url 'article:articleCreate' %}">新增文章</a></p>
     <br> 
        {% for items in itemList %}
       {% for item in items %}
