@@ -28,3 +28,6 @@ def articleCreate(request):
     articleForm.save()
     messages.success(request, '文章已新增')
     return redirect('article:article')
+
+def articleDelete(request):
+    pass
